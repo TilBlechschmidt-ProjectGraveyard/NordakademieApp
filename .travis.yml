@@ -1,5 +1,5 @@
 osx_image: xcode10
 language: objective-c
 xcode_project: NordakademieApp.xcodeproj
-xcode_scheme: NordakademieApp
+xcode_scheme: NordakademieAppTests
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)

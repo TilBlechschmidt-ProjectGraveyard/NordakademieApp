@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302E70F221480F88001D1919 /* NordakademieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E70F121480F88001D1919 /* NordakademieAppTests.swift */; };
 		30D35ADD214805190038ECFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D35ADC214805190038ECFB /* AppDelegate.swift */; };
 		30D35ADF214805190038ECFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D35ADE214805190038ECFB /* ViewController.swift */; };
 		30D35AE2214805190038ECFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D35AE0214805190038ECFB /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		30D35AEA2148051A0038ECFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D35AE82148051A0038ECFB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		302E70F421480F88001D1919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D35AD1214805190038ECFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D35AD8214805190038ECFB;
+			remoteInfo = NordakademieApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		302E70EF21480F88001D1919 /* NordakademieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NordakademieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		302E70F121480F88001D1919 /* NordakademieAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NordakademieAppTests.swift; sourceTree = "<group>"; };
+		302E70F321480F88001D1919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D35AD9214805190038ECFB /* NordakademieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NordakademieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D35ADC214805190038ECFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D35ADE214805190038ECFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		302E70EC21480F88001D1919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D35AD6214805190038ECFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302E70F021480F88001D1919 /* NordakademieAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				302E70F121480F88001D1919 /* NordakademieAppTests.swift */,
+				302E70F321480F88001D1919 /* Info.plist */,
+			);
+			path = NordakademieAppTests;
+			sourceTree = "<group>";
+		};
 		30D35AD0214805190038ECFB = {
 			isa = PBXGroup;
 			children = (
 				30D35ADB214805190038ECFB /* NordakademieApp */,
+				302E70F021480F88001D1919 /* NordakademieAppTests */,
 				30D35ADA214805190038ECFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				30D35AD9214805190038ECFB /* NordakademieApp.app */,
+				302E70EF21480F88001D1919 /* NordakademieAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		302E70EE21480F88001D1919 /* NordakademieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302E70F821480F88001D1919 /* Build configuration list for PBXNativeTarget "NordakademieAppTests" */;
+			buildPhases = (
+				302E70EB21480F88001D1919 /* Sources */,
+				302E70EC21480F88001D1919 /* Frameworks */,
+				302E70ED21480F88001D1919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				302E70F521480F88001D1919 /* PBXTargetDependency */,
+			);
+			name = NordakademieAppTests;
+			productName = NordakademieAppTests;
+			productReference = 302E70EF21480F88001D1919 /* NordakademieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		30D35AD8214805190038ECFB /* NordakademieApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D35AEE2148051B0038ECFB /* Build configuration list for PBXNativeTarget "NordakademieApp" */;
@@ -97,6 +147,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Til Blechschmidt";
 				TargetAttributes = {
+					302E70EE21480F88001D1919 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 30D35AD8214805190038ECFB;
+					};
 					30D35AD8214805190038ECFB = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -116,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				30D35AD8214805190038ECFB /* NordakademieApp */,
+				302E70EE21480F88001D1919 /* NordakademieAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		302E70ED21480F88001D1919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D35AD7214805190038ECFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +196,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		302E70EB21480F88001D1919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302E70F221480F88001D1919 /* NordakademieAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D35AD5214805190038ECFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		302E70F521480F88001D1919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D35AD8214805190038ECFB /* NordakademieApp */;
+			targetProxy = 302E70F421480F88001D1919 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30D35AE0214805190038ECFB /* Main.storyboard */ = {
@@ -166,6 +244,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		302E70F621480F88001D1919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQWS3ZT7UK;
+				INFOPLIST_FILE = NordakademieAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.NordakademieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NordakademieApp.app/NordakademieApp";
+			};
+			name = Debug;
+		};
+		302E70F721480F88001D1919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQWS3ZT7UK;
+				INFOPLIST_FILE = NordakademieAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.NordakademieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NordakademieApp.app/NordakademieApp";
+			};
+			name = Release;
+		};
 		30D35AEC2148051B0038ECFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,6 +439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		302E70F821480F88001D1919 /* Build configuration list for PBXNativeTarget "NordakademieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302E70F621480F88001D1919 /* Debug */,
+				302E70F721480F88001D1919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		30D35AD4214805190038ECFB /* Build configuration list for PBXProject "NordakademieApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
